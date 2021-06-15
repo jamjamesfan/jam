@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--分頁顯示的名稱  A-4 -->
+<title>Q and A</title>
+		
+<!--  引入自己寫的CSS  A-2-->
+<link href="../../../Downloads/9901391/style.css" rel="stylesheet" type="text/css">
+	
+<!--ctrl+/ 打註解 : 這4個link 是給 bootstrap用的 B-2 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+       
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+
+<body>
+		
+<section id="bar">
+		<nav class="navbar navbar-expand-md navbar-light bg-light">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="navbar-nav mr-auto">
+						<!--class中的 avtive 代表被選擇中，所以在index.html中，active效果要放在"首頁"這個字上，在intro.html中，active效果要放在"自我介紹"這個字上-->
+					<a class="nav-item nav-link" 
+					href="contactus.html"> 首頁 </a>
+					<a class="nav-item nav-link" 
+					href="intro.html">貓咪介紹</a>
+					<a class="nav-item nav-link active" href="../../../Downloads/9901391/QA.html">QandA</a> 
+					<a class="nav-item nav-link" href="contactus.html">james聯絡資訊</a>
+						
+					</div>
+	
+			</div>
+			
+		</nav>
+
+</section>
+	
+	
+<!--
+<section id="QAsecond">
+<div class="container">
+	<div class="row">
+		<div class="col-8 offset-2">
+-->
+<div class="accordion" id="accordionExample">
+<!--第一張卡片-->
+  <div class="card">
+      <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       獵豹&nbsp; </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body bodybg">
+     &nbsp;獵豹（學名：Acinonyx jubatus）又稱印度豹，是一種大型貓科動物，獵豹屬現存唯一的物種。野生種群現分布於非洲和伊朗，歷史上還曾見於西亞、中亞與南亞各國，棲息在較為乾旱炎熱的開闊生境，包括草原、半沙漠及裸岩地區。因被英國殖民時期的印度皇室大量飼養，用於狩獵羚羊和鹿，加之外貌與豹相似，故稱獵豹（英文：Hunting leopard）。其被毛呈黃褐色或淡黃色，吻部、頷部、胸腹部和四肢內側為白色；體表遍布黑色斑點，與豹相比其斑點較小且均為實心；頭小而圓，吻較短，眼部有白斑，內眼角沿鼻吻部兩側各有一道明顯的黑紋。分為4個亞種：東南非獵豹、東北非獵豹、西北非獵豹和亞洲獵豹；其中數量最多、體型最大的為東南非獵豹，成年雄性體重29－71公斤，均重45公斤，成年雌性21－63公斤，均重38公斤；其他3個亞種的成年體重一般在35公斤以下。</div>
+    </div>
+  </div>
+  
+  <!--第二張卡片-->
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        獅子
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body bodybg2">
+        獅（學名：Panthera leo），又稱為獅子（中國古稱狻猊），獅是一種生存在非洲和亞洲的大型貓科動物，豹屬之中最著名的一種。是和虎並列的體型最大的兩種貓科動物之一，其雄性的鬃毛是其特徵之一，過去曾分布在多個洲（主要是歐、亞、非），但因為人類的開發，現代的獅群生存環境與分布已經大大縮小了。中國本來沒有獅子，直到張騫通西域以後，才從伊朗附近的地區知道獅子的存在。
+      </div>
+    </div>
+  </div>
+  
+   <!--第三張卡片-->
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          老虎
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+       虎（學名：Panthera tigris），又稱為老虎，是和獅並列體型最大的兩種貓科動物之一。野外個體可長達3.38公尺（11.1英呎）、重388.7公斤（857英磅）（此為狩獵數據，實測數據的最大值為261kg）[6]。虎是掠食性肉食動物，有敏銳的聽力、夜視力，可以自由伸縮尖爪和粗壯的犬齒。除了龐大的體型與有力的肌肉之外，最明顯的特徵就是在白色到橘黃色的毛皮上有黑色垂直的條紋，這有助於其在捕獵時隱蔽自身。
+      </div>
+    </div>
+   </div>
+	
+	   
+	
+
+
+  
+   
+</div>
+		
+	
+
+	
+
+</body>
+</html>
